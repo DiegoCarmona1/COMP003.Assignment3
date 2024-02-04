@@ -21,7 +21,7 @@ namespace COMP003.Assignment3
             Console.WriteLine("Input integer between 1-100");
             string inputNumber = Console.ReadLine();
             double numericGrade = Convert.ToDouble(inputNumber);
-            if (numericGrade <= 90) { Console.WriteLine("Letter Grade: A"); }
+            if (numericGrade >= 90) { Console.WriteLine("Letter Grade: A"); }
             else if (numericGrade >= 80) { Console.WriteLine("Letter Grade: B"); }
             else if (numericGrade >= 70) { Console.WriteLine("Letter Grade: C"); }
             else if (numericGrade >= 60) { Console.WriteLine("Letter Grade: D"); }
