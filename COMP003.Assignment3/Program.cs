@@ -21,12 +21,15 @@ namespace COMP003.Assignment3
             Console.WriteLine("Input integer between 1-100");
             string inputNumber = Console.ReadLine();
             double numericGrade = Convert.ToDouble(inputNumber);
-            if (numericGrade >= 90) { Console.WriteLine("Letter Grade: A"); }
-            else if (numericGrade >= 80) { Console.WriteLine("Letter Grade: B"); }
-            else if (numericGrade >= 70) { Console.WriteLine("Letter Grade: C"); }
-            else if (numericGrade >= 60) { Console.WriteLine("Letter Grade: D"); }
-            else { Console.WriteLine("Letter Grade: F"); } 
-            if (numericGrade == double.NaN) { Console.WriteLine("Invalid Input"); }
+            if (numericGrade >= 0 && numericGrade <= 100)
+            {
+                if (numericGrade >= 90) { Console.WriteLine("Letter Grade: A"); }
+                else if (numericGrade >= 80) { Console.WriteLine("Letter Grade: B"); }
+                else if (numericGrade >= 70) { Console.WriteLine("Letter Grade: C"); }
+                else if (numericGrade >= 60) { Console.WriteLine("Letter Grade: D"); }
+                else { Console.WriteLine("Letter Grade: F"); }
+            }
+            else { Console.WriteLine("Invalid Input"); }
 
             //Switch Section
             Console.WriteLine("Input Day of week: (1-7)");
